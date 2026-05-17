@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caleb Makes Graphics — About</title>
+  <meta name="description" content="Learn about Alex Monroe — creative director and graphic designer based in New York City." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav>
+    <a class="nav-logo" href="index.html">Caleb Makes Graphics<span>.</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="contact.html" class="btn btn-solid" style="padding:0.5rem 1.3rem">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main class="page-enter">
+    <div class="container section-pad">
+
+      <div class="divider"><span class="label">About</span></div>
+
+      <!-- ── BIO GRID ─────────────────────────────────────────── -->
+      <div class="about-grid">
+
+        <!-- ★ PORTRAIT PHOTO ★
+             To use your own photo:
+             1. Drop your image file into the  images/  folder
+             2. Replace  images/portrait.jpg  below with your filename
+             3. Update the alt text with your name
+             Recommended size: at least 600 × 700 px.              -->
+        <div class="about-img-wrap">
+          <div class="about-portrait">
+            <img
+              src="images/Website portrait.JPG"
+              alt="Caleb — Creative Director & Visual Designer"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+              style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+            />
+            <!-- Fallback shown when no photo is present yet -->
+            <svg style="display:none;width:100%;height:100%" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="50" cy="35" rx="22" ry="24" fill="#c8a96e"/>
+              <path d="M10 120 C10 80 90 80 90 120Z" fill="#c8a96e"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Bio copy column -->
+        <div class="about-copy">
+          <h2 class="display">
+            Hello, I'm<br/>
+            <span class="display-italic">Caleb</span>.
+          </h2>
+          <p>
+            I'm a high school student and athlete with a passion for graphic design / art,
+            I started to explore graphic design in late 2025 and I am mostly self taught using Adobe Photoshop and Illustrator 
+            to create a variety of projects including logos, posters, and social media graphics.
+            I enjoy experimenting with different styles and techniques to create visually compelling designs.
+          </p>
+          <p>
+            I am just now starting to build my portfolio and gain more experience in the world of graphic design freelancing.
+            Graphic design is a passion that I hope to turn into a career.
+          </p>
+          <p>
+            When I'm not designing, you'll find me on the track or the cross country course with my teamates.
+          </p>
+
+          <!-- Tool / software tags -->
+          <div class="skills-list">
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">After Effects</span>
+            <span class="skill-tag">Premier Pro</span>
+            <span class="skill-tag">Davinci Resolve</span>
+          </div>
+
+          <a href="contact.html" class="btn">Work With Me →</a>
+        </div>
+
+      </div><!-- /.about-grid -->
+
+      <!-- ── EXPERIENCE TIMELINE ──────────────────────────────── -->
+      <div class="timeline">
+        <div class="divider" style="margin-top:5rem">
+          <span class="label">Experience</span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2025 - Now</div>
+          <div>
+            <div class="timeline-role">Student Graphic Designer</div>
+            <div class="timeline-place">The Track/XC team social media manager.</div>
+          </div>
+        </div>
+
+      </div><!-- /.timeline -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">Caleb Makes Graphics<span>.</span></div>
+      <p>&copy; 2026 Caleb Makes Graphics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Shared navigation script -->
+  <script src="js/nav.js"></script>
+</body>
+</html>

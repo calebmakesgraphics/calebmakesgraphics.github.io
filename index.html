@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caleb Makes Graphics</title>
+  <meta name="description" content="Award-winning graphic design studio specialising in brand identity, editorial, and digital experiences." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION (shared across all pages)
+       nav.js automatically highlights the active link by filename.
+  ============================================================ -->
+  <nav>
+    <a class="nav-logo" href="index.html">Caleb Makes Graphics<span>.</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="contact.html" class="btn btn-solid" style="padding:0.5rem 1.3rem">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile dropdown -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       .page-enter triggers the fade-up animation on load.
+  ============================================================ -->
+  <main class="page-enter">
+
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <section class="home-hero">
+      <div class="hero-copy container">
+        <div class="hero-eyebrow">
+          <span class="label">Creative Director &amp; Visual Designer</span>
+        </div>
+        <h1 class="hero-title display">
+          Crafting<br/>
+          <span class="display-italic">Designs</span><br/>
+          For You.
+        </h1>
+        <p class="hero-subtitle">
+          Graphic design services for your brand.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-solid">View My Work</a>
+          <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- Abstract geometric art panel (hidden on mobile via CSS) -->
+      <div class="hero-visual">
+        <div class="hero-geo">
+          <div class="geo-rect"></div>
+          <div class="geo-rect"></div>
+          <div class="geo-rect"></div>
+          <div class="geo-rect"></div>
+          <div class="geo-label">Design</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS BAR ──────────────────────────────────────────── -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Sports Graphics Created</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Year Of Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1+</div>
+        <div class="stat-label">Original Artworks</div>
+      </div>
+    </div>
+
+    <!-- ── SERVICES ───────────────────────────────────────────── -->
+    <div class="services-strip">
+      <div class="container">
+        <div class="divider"><span class="label">What I Do</span></div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">◈</div>
+            <div class="service-title">Brand Identity</div>
+            <p class="service-desc">Logos, visual systems, and everything else needed to establish a strong presence.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">◫</div>
+            <div class="service-title">Print &amp; Editorial</div>
+            <p class="service-desc">Magazines, books, packaging, and print collateral designs.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">◉</div>
+            <div class="service-title">Sports Design</div>
+            <p class="service-desc">Game day graphics, event posters, and promotional materials.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">◧</div>
+            <div class="service-title">Original/Commissioned Art</div>
+            <p class="service-desc">Original Pieces or Custom Commissions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">Caleb Makes Graphics<span>.</span></div>
+      <p>&copy; 2026 Caleb Makes Graphics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Shared navigation script -->
+  <script src="js/nav.js"></script>
+</body>
+</html>

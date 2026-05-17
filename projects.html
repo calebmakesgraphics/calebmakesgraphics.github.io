@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caleb Makes Graphics — Work</title>
+  <meta name="description" content="Selected projects and case studies by Alex Monroe — brand identity, editorial, digital design, and motion." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav>
+    <a class="nav-logo" href="index.html">Caleb Makes Graphics<span>.</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="contact.html" class="btn btn-solid" style="padding:0.5rem 1.3rem">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       The filter bar and project cards are injected by projects.js.
+  ============================================================ -->
+  <main class="page-enter">
+    <div class="container section-pad">
+
+      <div class="divider"><span class="label">Selected Work</span></div>
+
+      <h1 class="display" style="font-size:clamp(2rem,4vw,3.5rem);margin-bottom:2.5rem">
+        Projects &amp; <span class="display-italic">Case Studies</span>
+      </h1>
+
+      <!-- Filter buttons — populated by projects.js -->
+      <div class="filter-bar" id="filterBar"></div>
+
+      <!-- Project cards — populated by projects.js -->
+      <div class="projects-grid" id="projectsGrid"></div>
+
+    </div>
+  </main>
+
+  <!-- ── PROJECT LIGHTBOX MODAL ─────────────────────────────────
+       Hidden by default. Opened by openModal(id) in projects.js.
+       Clicking the dark overlay or pressing Escape closes it.
+  ─────────────────────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <div class="modal-header" id="modalHeader">
+        <!-- Populated by projects.js -->
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Populated by projects.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">Caleb Makes Graphics<span>.</span></div>
+      <p>&copy; 2026 Caleb Makes Graphics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Shared nav script + page-specific projects script -->
+  <script src="js/nav.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
